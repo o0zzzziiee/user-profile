@@ -1,0 +1,19 @@
+<div class="standartForm">
+  <label for="username">Name</label>
+  <input
+    type="text"
+    name="UsernameInput"
+    [(ngModel)]="user.name"
+    placeholder="Introduce yourself"
+  />
+  <p>You'll be {{ user.name }}</p>
+  <label for="userage">Age</label>
+  <input
+    type="number"
+    name="UserAgeInput"
+    [(ngModel)]="user.age"
+    placeholder="How old are you"
+  />
+  <p>You're {{ user.age }} years old</p>
+  <app-user-profile [user]="user"></app-user-profile>
+</div>
